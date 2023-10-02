@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Teste de imagem de fundo</title>
+    <style>
+
+        body {
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+
+        h1 {
+            color: white;
+            text-transform: uppercase;
+            font-weight: bolder;
+            font-size: 2em;
+            display: block;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .quadradao {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 150px;
+            height: 100%;
+            width: 100%;
+        }
+
+        .quadrado {
+            background-color: lightgray;
+            border-radius: 10px;
+            border: 1px solid black;
+            width: 300px;
+            height: 300px;
+            font-size: 30px;
+            font-weight: bolder;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+        }
+        
+        #q1 {
+            background-color: skyblue;
+        }
+
+        #q2 {
+            background-image: linear-gradient(to bottom, yellow, red);
+        }
+        #q3 {
+            background-image: url('imagens/pattern001.png');
+        }
+    </style>
 </head>
 <body>
-    
+
+    <h1>Maneiras de Ulilizar cores</h1>
+    <div class="quadradao">
+        <div class="quadrado" id="q1">
+            background-color
+        </div>
+        <div class="quadrado" id="q2">
+            background-image: linear-gradient
+        </div>
+        <div class="quadrado" id="q3">
+            background-image: (url)
+        </div>
+    </div>
 </body>
 </html>
