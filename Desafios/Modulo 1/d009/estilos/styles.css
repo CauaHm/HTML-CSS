@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color:  rgb(47, 44, 44);;
+}
+
+h1 {
+    font-size: 46px;
+    color: white;
+}
+
+p {
+    font-size: 32px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+a .complet:hover {
+    color: rgba(255, 166, 0, 0.633);
+    text-decoration: underline;
+}
