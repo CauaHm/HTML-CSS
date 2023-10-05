@@ -54,6 +54,7 @@ header h1 {
 
 header p {
     font-size: 1.2em;
+    padding-bottom: 2em;
 }
 
 header a:hover, footer a:hover {
@@ -69,6 +70,16 @@ section {
     font-size: 3.5vh;
 }
 
+#img001 {
+    background-image: url('../imagens/background001.jpg'); 
+    background-position: right center;
+}
+
+#img002 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
+
 section.normal {
     background-color: white;
     color: black;
@@ -77,12 +88,16 @@ section.normal {
 .imagem {
     background-color: rgba(51, 51, 51); 
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-section.imagem p {
-    background-color: rgba(0, 0, 0, 0.253);
+.imagem p {
+    background-color: rgba(0, 0, 0, 0.514);
     display: inline-block;
     padding: 5px;
+    text-shadow: 1px 1px 0px black;
 }
 
 footer {
