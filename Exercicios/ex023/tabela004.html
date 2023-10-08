@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de filmes favoritos</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 88vh;
+        }
+
+        .div {
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        id {
+            font-size: 1.3em;
+            font-weight: bolder;
+            display: block;
+            text-align: center;
+            margin: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 400px;
+            text-align: center;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="div">
+        <h1>
+            Exercicios de Tabelas
+        </h1>
+        <div>
+            <id>
+                <caption>Filmes Favoritos</caption>
+            </id>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Grupo</th>
+                        <th>Nomes</th>
+                        <th scope="col" colspan="3">Filmes</th>
+        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="rowgroup" rowspan="3">Mulheres</th>
+                        <td>Ana Marias Santos</td>
+                        <td>Alien</td>
+                        <td>Rambo</td>
+                        <td>Vingadores</td>
+                    </tr>
+                    <tr>
+                        <td>Beatriz Souza</td>
+                        <td>Hulk</td>
+                        <td>Indeption</td>
+                        <td>Batman</td>
+                    </tr>
+                    <tr>
+                        <td>Cláudia Melo</td>
+                        <td>Oblivion</td>
+                        <td>Matrix</td>
+                        <td>Big Hero</td>
+                    </tr>
+                    <tr>
+                        <th scope="rowgroup" rowspan="3">Homens</th>
+                        <td>Bruno Mendonça</td>
+                        <td>Intocáveis</td>
+                        <td>Amnésia</td>
+                        <td>Gladiador</td>
+                    </tr>
+                    <tr>
+                        <td>Daniel Lourenço</td>
+                        <td>Wall-3</td>
+                        <td>Oldboy</td>
+                        <td>Dalgal</td>
+                    </tr>
+                    <tr>
+                        <td>Fabiano Mota</td>
+                        <td>Star Wars 5</td>
+                        <td>Taxi Driver</td>
+                        <td>Toy Story</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="4" scope="row">Total</th>
+                        <td>1000</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
