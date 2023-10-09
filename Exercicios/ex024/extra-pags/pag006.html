@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java-Script</title>
+</head>
+<body style="display: flex; justify-content: space-around;">
+    <a href="#" onclick="clicou()">Clique em mim</a>
+    <div id="saida"></div>
+
+        <div>
+            <form action="">
+                <p>
+                    nome:
+                    <input type="text" name="nome" id="nome">
+                    <input type="submit" value="Enviar!">
+
+                </p>
+            </form>
+        </div>
+
+    <script>
+        function clicou() {
+            s = window.document.getElementById("saida")
+            s.innerHTML += '<p>você  clicou aqui!</p>'
+        }
+    </script>
+</body>
+</html>
