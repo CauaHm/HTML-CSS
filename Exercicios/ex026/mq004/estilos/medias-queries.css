@@ -1,2 +1,135 @@
 @charset "UTF-8";
 
+/*Typical device breakpoints*/
+
+/*
+--------------------------------------------
+
+Mobile devices – 320px — 480px.
+iPads, Tablets – 481px — 768px.
+Small screens, laptops – 769px — 1024px.
+Desktops, large screens – 1025px — 1200px.
+Extra large screens, TV – 1201px, and more.
+
+--------------------------------------------
+*/
+
+@media print { /*impressão*/
+    body {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    main::after {
+        margin: auto;
+        display: block;
+        width: 98vw;
+        text-align: center;
+        font-size: 20px;
+        text-decoration: overline;
+        content: 'feito por Cauã com o auxilio do CursoemVideo';
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    h1 {
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
+    }
+
+    #cll {
+        display: none;
+    }
+    
+    #tablet {
+        display: none;
+    }
+    
+    #tv {
+        display: none;
+    }
+    
+    #pc {
+        display: none;
+    }
+
+    #impressao {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) { /*tablets*/
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #cll {
+        display: none;
+    }
+    
+    #tablet {
+        display: block;
+    }
+    
+    #tv {
+        display: none;
+    }
+    
+    #pc {
+        display: none;
+    }
+
+    #impressao {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) { /*desktop*/
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #cll {
+        display: none;
+    }
+    
+    #tablet {
+        display: none;
+    }
+    
+    #tv {
+        display: none;
+    }
+    
+    #pc {
+        display: block;
+    }
+    #impressao {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1201px) { /*grandes telas*/
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    #cll {
+        display: none;
+    }
+    
+    #tablet {
+        display: none;
+    }
+    
+    #tv {
+        display: block;
+    }
+    
+    #pc {
+        display: none;
+    }
+    #impressao {
+        display: none;
+    }
+}

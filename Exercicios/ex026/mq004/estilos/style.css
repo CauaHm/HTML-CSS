@@ -46,6 +46,19 @@ img {
     display: block;
 }
 
-#tablet, #impressao, #pc, #tv {
+#tablet {
     display: none;
 }
+
+#tv {
+    display: none;
+}
+
+#pc {
+    display: none;
+}
+
+#impressao {
+    display: none;
+}
+
